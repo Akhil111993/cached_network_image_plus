@@ -26,40 +26,40 @@ start using the package.
 ## Usage
 
 ```dart
-CachedNetworkImagePlus(
-
-width: 200,
-
-height: 300,
-
-fit: BoxFit.cover,
-
-url: imageUrl,  //add your image url here
-
-);
+  CachedNetworkImagePlus(
+  
+      width: 200,
+      
+      height: 300,
+      
+      fit: BoxFit.cover,
+      
+      url: imageUrl,  //add your image url here
+  
+  );
 ```
 
 
 If you want to get ImageProvider you can use the code from the following example
 
-decoration: BoxDecoration(
-
-image: DecorationImage(
-
-    image: CachedNetworkImagePlusNetworkProvider()
-
-        .getImageProvider(imageUrl), 
-
-),
-
-),
+```dart
+       decoration: BoxDecoration(
+        
+        image: DecorationImage(
+        
+            image: CachedNetworkImagePlusNetworkProvider()
+        
+                .getImageProvider(imageUrl), 
+        
+        ),
+        
+        ),
+```
+ 
 
 TODO: Include short and useful examples for package users. Add longer examples
 to `/example` folder. 
 
-```dart
-const like = 'sample';
-```
 
 ## Additional information
 
