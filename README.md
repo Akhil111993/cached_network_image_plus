@@ -11,17 +11,22 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+This package is a clone of cached_image_network. If you are still seeing loading screen
+when using cached_image_network you can use this project. Note that this package will also 
+show loading screen if the image is loading the first time.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+This package downloads the image to a temporary folder the first time image loads and load image
+from that folder whenever the image is called again
 
+<!-- 
 ## Getting started
 
 TODO: List prerequisites and provide or point to information on how to
+
 start using the package.
+-->
 
 ## Usage
 
@@ -39,7 +44,6 @@ start using the package.
   );
 ```
 
-
 If you want to get ImageProvider you can use the code from the following example
 
 ```dart
@@ -55,14 +59,18 @@ If you want to get ImageProvider you can use the code from the following example
         
         ),
 ```
- 
 
+<!-- 
 TODO: Include short and useful examples for package users. Add longer examples
+
 to `/example` folder. 
 
 
 ## Additional information
 
 TODO: Tell users more about the package: where to find more information, how to 
+
 contribute to the package, how to file issues, what response they can expect 
+
 from the package authors, and more.
+-->
