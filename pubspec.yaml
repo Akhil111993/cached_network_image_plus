@@ -1,0 +1,23 @@
+name: cached_network_image_plus
+description: Alternative for flutter cached_network_image
+version: 0.0.1
+author: Akhil V S
+homepage: https://github.com/flutter-prjs/flutter_pkg
+
+environment:
+  sdk: ">=2.12.1 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  path_provider: ^2.0.11
+  http: ^0.13.4
+  path: ^1.8.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+
+flutter:
