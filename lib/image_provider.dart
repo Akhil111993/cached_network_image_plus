@@ -1,12 +1,12 @@
 class ImageProvider {
-  final imageMap = <String, String>{};
-  static final imageProvider = ImageProvider._internal();
+  static final imageMap = <String, String>{};
+  // static final imageProvider = ImageProvider._internal();
+  //
+  // factory ImageProvider() => imageProvider;
 
-  factory ImageProvider() => imageProvider;
+  // ImageProvider._internal();
 
-  ImageProvider._internal();
-
-  void addImage(String url, String path) {
+  static void addImage(String url, String path) {
     imageMap.putIfAbsent(url, () => path);
   }
 }

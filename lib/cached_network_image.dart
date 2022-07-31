@@ -67,7 +67,7 @@ class _CachedNetworkImagePlusState extends State<CachedNetworkImagePlus> {
   double opacity = 0;
   @override
   Widget build(BuildContext context) {
-    return !image.ImageProvider().imageMap.keys.contains(widget.url)
+    return !image.ImageProvider.imageMap.keys.contains(widget.url)
         ? FutureBuilder(
             future: ImageRequest().download(widget.url),
             builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
@@ -100,7 +100,7 @@ class _CachedNetworkImagePlusState extends State<CachedNetworkImagePlus> {
         : () {
             opacity = 1.0;
             return getImageWidget(
-                image.ImageProvider().imageMap[widget.url] as String);
+                image.ImageProvider.imageMap[widget.url] as String);
           }();
   }
 

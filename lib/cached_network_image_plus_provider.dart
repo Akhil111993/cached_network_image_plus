@@ -7,9 +7,9 @@ import 'image_request.dart';
 
 class CachedNetworkImagePlusNetworkProvider {
   ImageProvider<Object> getImageProvider(String url) {
-    if (image.ImageProvider().imageMap.keys.contains(url)) {
+    if (image.ImageProvider.imageMap.keys.contains(url)) {
       return FileImage(
-        File(image.ImageProvider().imageMap[url] as String),
+        File(image.ImageProvider.imageMap[url] as String),
       );
     } else {
       ImageRequest().download(url);

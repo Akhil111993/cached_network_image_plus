@@ -20,7 +20,7 @@ class ImageRequest {
     final imageFile = File(localPath);
     await imageFile.writeAsBytes(response.bodyBytes);
 
-    ImageProvider().addImage(url, localPath);
+    ImageProvider.addImage(url, localPath);
     return localPath;
   }
 }
